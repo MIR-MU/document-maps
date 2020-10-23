@@ -1,0 +1,3 @@
+[submodule "example_comparing_serps/SCM-at-ARQMath"]
+	path = example_comparing_serps/SCM-at-ARQMath
+	url = https://github.com/MIR-MU/SCM-at-ARQMath.git
