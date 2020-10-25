@@ -20,7 +20,7 @@ $ pip install -r scm_at_arqmath/requirements.txt
 ```
 
 To download the required input data, execute the following command in this
-directory. Note that up to 1TiB of data will be downloaded.
+directory. *Up to 1TiB of data will be downloaded.*
 
 ``` sh
 $ dvc pull
