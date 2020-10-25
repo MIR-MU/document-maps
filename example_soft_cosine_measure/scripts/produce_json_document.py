@@ -10,15 +10,18 @@ from gensim.corpora import Dictionary
 from gensim.models import TfidfModel
 from gensim.models.phrases import Phraser
 from gensim.similarities import SparseTermSimilarityMatrix
-from tqdm import tqdm
 from scipy.sparse import dok_matrix
 
 from arqmath_eval import get_judged_documents
 
 sys.path.append('scm_at_arqmath')
 
-from scm_at_arqmath.scripts.common import read_corpora
-from scm_at_arqmath.scripts.configuration import CSV_PARAMETERS, ARQMATH_TASK1_TEST_POSTS_NUM_DOCUMENTS as NUM_QUERIES, ARQMATH_COLLECTION_POSTS_NUM_DOCUMENTS as NUM_DOCUMENTS
+from scm_at_arqmath.scripts.common import read_corpora  # noqa E402
+from scm_at_arqmath.scripts.configuration import (  # noqa E402
+    CSV_PARAMETERS,
+    ARQMATH_TASK1_TEST_POSTS_NUM_DOCUMENTS as NUM_QUERIES,
+    ARQMATH_COLLECTION_POSTS_NUM_DOCUMENTS as NUM_DOCUMENTS,
+)
 
 
 LOGGER = logging.getLogger(__name__)
@@ -50,8 +53,6 @@ def read_results(filename, topn=5):
 
 
 def get_reader_configuration(input_data):
-    tfidf_queries = input_data['tfidf_queries']
-    tfidf_documents = input_data['tfidf_documents']
     phraser = input_data['phraser']
     results = input_data['results']
 
@@ -70,7 +71,7 @@ def get_reader_configuration(input_data):
         'parallelize_transformers': False,
     }
     reader_kwargs = {
-        'phraser': phraser,        
+        'phraser': phraser,
     }
     return (configuration, reader_kwargs)
 
@@ -147,7 +148,6 @@ def produce_json_document(input_data, corpora, f=sys.stdout):
     }
 
     json.dump(json_document, f, sort_keys=True, indent=4)
-    
 
 
 if __name__ == '__main__':
