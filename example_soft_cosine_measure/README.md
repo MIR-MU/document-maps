@@ -1,10 +1,14 @@
-This directory produces a JSON document with interpretable search results of
+This directory contains a JSON document with interpretable search results of
 [the Soft Cosine Measure (SCM) math information retrieval system at ARQMath
 2020][paper].
 
  [paper]: http://ceur-ws.org/Vol-2696/paper_235.pdf#page=10
 
-# Producing the JSON document
+# Reproducing the JSON document
+
+If you would like to reproduce the JSON document, follow the steps in this
+section. *This will require a lot of time and storage space and it is not
+recommended for most users.*
 
 To install the required packages, use Python 3 and execute the following
 commands in this directory:
