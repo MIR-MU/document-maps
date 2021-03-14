@@ -213,7 +213,7 @@ and the most important soft word matches are ("rational", "rationals"), (`V!F`,
 ...             if (word1, word2) not in word_pair_importances:
 ...                 word_pair_importances[word1, word2] = 0.0
 ...             word_pair_importances[word1, word2] += word_pair_importance
-...     norm = soft_cosine_measure_norm(text1_id, text1_id)
+...     norm = soft_cosine_measure_norm(text1_id, text2_id)
 ...     normalized_word_pair_importances = {
 ...         (word1, word2): word_pair_importance / norm
 ...         for (word1, word2), word_pair_importance
