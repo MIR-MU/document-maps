@@ -1,3 +1,6 @@
 [submodule "example_comparing_serps/SCM-at-ARQMath"]
 	path = example_soft_cosine_measure/scm_at_arqmath
 	url = https://github.com/MIR-MU/SCM-at-ARQMath.git
+[submodule "visualization"]
+	path = visualization
+	url = https://github.com/xpetr2/document-maps.git
