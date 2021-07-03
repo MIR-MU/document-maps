@@ -3,4 +3,4 @@
 	url = https://github.com/MIR-MU/SCM-at-ARQMath.git
 [submodule "visualization"]
 	path = visualization
-	url = https://github.com/xpetr2/document-maps.git
+	url = https://github.com/MIR-MU/document-maps-visualization.git
