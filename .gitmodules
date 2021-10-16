@@ -1,5 +1,5 @@
-[submodule "example_comparing_serps/SCM-at-ARQMath"]
-	path = example_soft_cosine_measure/scm_at_arqmath
+[submodule "dataset/arqmath-2020/scm_at_arqmath"]
+	path = dataset/arqmath-2020/scm_at_arqmath
 	url = https://github.com/MIR-MU/SCM-at-ARQMath.git
 [submodule "visualization"]
 	path = visualization
